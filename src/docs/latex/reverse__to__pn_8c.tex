@@ -1,0 +1,48 @@
+\doxysection{Файл source/reverse\+\_\+to\+\_\+pn.c}
+\hypertarget{reverse__to__pn_8c}{}\label{reverse__to__pn_8c}\index{source/reverse\_to\_pn.c@{source/reverse\_to\_pn.c}}
+{\ttfamily \#include \"{}s21\+\_\+calc.\+h\"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{reverse__to__pn_8c_a1d3b3b2b471daf5a05919e06ca692272}{rpn}} (char \texorpdfstring{$\ast$}{*}input, char \texorpdfstring{$\ast$}{*}output)
+\begin{DoxyCompactList}\small\item\em Transform infix string to revers polish string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{reverse__to__pn_8c_a0ab20fdd64b0ac84e7024ded81ee79ae}{prec}} (char x)
+\begin{DoxyCompactList}\small\item\em Priority determinant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\Hypertarget{reverse__to__pn_8c_a0ab20fdd64b0ac84e7024ded81ee79ae}\label{reverse__to__pn_8c_a0ab20fdd64b0ac84e7024ded81ee79ae} 
+\index{reverse\_to\_pn.c@{reverse\_to\_pn.c}!prec@{prec}}
+\index{prec@{prec}!reverse\_to\_pn.c@{reverse\_to\_pn.c}}
+\doxysubsubsection{\texorpdfstring{prec()}{prec()}}
+{\footnotesize\ttfamily int prec (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+Priority determinant. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & checking item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+priority 1\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}2\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}3\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}4 
+\end{DoxyReturn}
+\Hypertarget{reverse__to__pn_8c_a1d3b3b2b471daf5a05919e06ca692272}\label{reverse__to__pn_8c_a1d3b3b2b471daf5a05919e06ca692272} 
+\index{reverse\_to\_pn.c@{reverse\_to\_pn.c}!rpn@{rpn}}
+\index{rpn@{rpn}!reverse\_to\_pn.c@{reverse\_to\_pn.c}}
+\doxysubsubsection{\texorpdfstring{rpn()}{rpn()}}
+{\footnotesize\ttfamily void rpn (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input,  }\item[{char \texorpdfstring{$\ast$}{*}}]{output }\end{DoxyParamCaption})}
+
+
+
+Transform infix string to revers polish string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em in\+\_\+equation} & pointer to infix string \\
+\hline
+{\em out\+\_\+equation} & pointer to reverse polish string \\
+\hline
+\end{DoxyParams}

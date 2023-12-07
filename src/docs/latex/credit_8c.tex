@@ -1,0 +1,65 @@
+\doxysection{Файл source/credit.c}
+\hypertarget{credit_8c}{}\label{credit_8c}\index{source/credit.c@{source/credit.c}}
+{\ttfamily \#include \"{}s21\+\_\+calc.\+h\"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{credit_8c_a3f666cda5a971cd907b4856c164913d6}{credit\+\_\+ann}} (double sum, int time, double percent, double \texorpdfstring{$\ast$}{*}month\+\_\+pay, double \texorpdfstring{$\ast$}{*}overpay, double \texorpdfstring{$\ast$}{*}common\+\_\+pay)
+\begin{DoxyCompactList}\small\item\em The function of calling the calculation of the credit (annuity) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{credit_8c_a729ec76b11796254817e30a650c0b6e4}{credit\+\_\+diff}} (double sum, int time, double percent, double remainder, double \texorpdfstring{$\ast$}{*}month\+\_\+pay, double \texorpdfstring{$\ast$}{*}overpay, int cur\+\_\+m)
+\begin{DoxyCompactList}\small\item\em The function of calling the calculation of the credit (differentional) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\Hypertarget{credit_8c_a3f666cda5a971cd907b4856c164913d6}\label{credit_8c_a3f666cda5a971cd907b4856c164913d6} 
+\index{credit.c@{credit.c}!credit\_ann@{credit\_ann}}
+\index{credit\_ann@{credit\_ann}!credit.c@{credit.c}}
+\doxysubsubsection{\texorpdfstring{credit\_ann()}{credit\_ann()}}
+{\footnotesize\ttfamily void credit\+\_\+ann (\begin{DoxyParamCaption}\item[{double}]{sum,  }\item[{int}]{time,  }\item[{double}]{percent,  }\item[{double \texorpdfstring{$\ast$}{*}}]{month\+\_\+pay,  }\item[{double \texorpdfstring{$\ast$}{*}}]{overpay,  }\item[{double \texorpdfstring{$\ast$}{*}}]{common\+\_\+pay }\end{DoxyParamCaption})}
+
+
+
+The function of calling the calculation of the credit (annuity) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sum} & -\/ credit sum \\
+\hline
+{\em time} & -\/ credit term \\
+\hline
+{\em percent} & -\/ annual interest rate \\
+\hline
+{\em month\+\_\+pay} & -\/ monthly pay \\
+\hline
+{\em overpay} & -\/ overpay sum \\
+\hline
+{\em common\+\_\+pay} & -\/ summury pay \\
+\hline
+\end{DoxyParams}
+\Hypertarget{credit_8c_a729ec76b11796254817e30a650c0b6e4}\label{credit_8c_a729ec76b11796254817e30a650c0b6e4} 
+\index{credit.c@{credit.c}!credit\_diff@{credit\_diff}}
+\index{credit\_diff@{credit\_diff}!credit.c@{credit.c}}
+\doxysubsubsection{\texorpdfstring{credit\_diff()}{credit\_diff()}}
+{\footnotesize\ttfamily void credit\+\_\+diff (\begin{DoxyParamCaption}\item[{double}]{sum,  }\item[{int}]{time,  }\item[{double}]{percent,  }\item[{double}]{remainder,  }\item[{double \texorpdfstring{$\ast$}{*}}]{month\+\_\+pay,  }\item[{double \texorpdfstring{$\ast$}{*}}]{overpay,  }\item[{int}]{cur\+\_\+m }\end{DoxyParamCaption})}
+
+
+
+The function of calling the calculation of the credit (differentional) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sum} & -\/ credit sum \\
+\hline
+{\em time} & -\/ credit term \\
+\hline
+{\em percent} & -\/ annual interest rate \\
+\hline
+{\em remainder} & -\/ credit sum remainder \\
+\hline
+{\em month\+\_\+pay} & -\/ monthly pay \\
+\hline
+{\em overpay} & -\/ overpay sum \\
+\hline
+{\em cur\+\_\+m} & -\/ current month \\
+\hline
+\end{DoxyParams}

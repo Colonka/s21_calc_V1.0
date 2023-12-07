@@ -1,0 +1,97 @@
+\doxysection{Файл source/calculation.c}
+\hypertarget{calculation_8c}{}\label{calculation_8c}\index{source/calculation.c@{source/calculation.c}}
+{\ttfamily \#include \"{}s21\+\_\+calc.\+h\"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{calculation_8c_afbc8b95650893c9b349e88dd8504be17}{calculation}} (char \texorpdfstring{$\ast$}{*}input, double x, double \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Only calculation function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{calculation_8c_a1fdd3382b8ac0391dc5835ec07c04874}{oper}} (char ch, \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}top, int \texorpdfstring{$\ast$}{*}error)
+\begin{DoxyCompactList}\small\item\em Support function for calculation when encounter operator. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{calculation_8c_a842e573b5940caf6081863326d3a0d11}{string\+\_\+to\+\_\+num}} (char \texorpdfstring{$\ast$}{*}str, double \texorpdfstring{$\ast$}{*}x)
+\begin{DoxyCompactList}\small\item\em Function that transform number from string format to double. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{calculation_8c_a9707ea0cb997e605a804e178bb72cd6d}{func}} (char ch, \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}top, int \texorpdfstring{$\ast$}{*}error)
+\begin{DoxyCompactList}\small\item\em Support function for calculation when encounter function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\Hypertarget{calculation_8c_afbc8b95650893c9b349e88dd8504be17}\label{calculation_8c_afbc8b95650893c9b349e88dd8504be17} 
+\index{calculation.c@{calculation.c}!calculation@{calculation}}
+\index{calculation@{calculation}!calculation.c@{calculation.c}}
+\doxysubsubsection{\texorpdfstring{calculation()}{calculation()}}
+{\footnotesize\ttfamily int calculation (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input,  }\item[{double}]{x,  }\item[{double \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Only calculation function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em input} & pointer to the input equation string \\
+\hline
+{\em x} & -\/ value х \\
+\hline
+{\em result} & -\/ calculation result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+code error 1 -\/ ok, 0 -\/ error, 2 -\/ inf 
+\end{DoxyReturn}
+\Hypertarget{calculation_8c_a9707ea0cb997e605a804e178bb72cd6d}\label{calculation_8c_a9707ea0cb997e605a804e178bb72cd6d} 
+\index{calculation.c@{calculation.c}!func@{func}}
+\index{func@{func}!calculation.c@{calculation.c}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily void func (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{top,  }\item[{int \texorpdfstring{$\ast$}{*}}]{error }\end{DoxyParamCaption})}
+
+
+
+Support function for calculation when encounter function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em сh} & func id \\
+\hline
+{\em top} & -\/ pointer to stack \\
+\hline
+{\em error} & -\/ error variable \\
+\hline
+\end{DoxyParams}
+\Hypertarget{calculation_8c_a1fdd3382b8ac0391dc5835ec07c04874}\label{calculation_8c_a1fdd3382b8ac0391dc5835ec07c04874} 
+\index{calculation.c@{calculation.c}!oper@{oper}}
+\index{oper@{oper}!calculation.c@{calculation.c}}
+\doxysubsubsection{\texorpdfstring{oper()}{oper()}}
+{\footnotesize\ttfamily void oper (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{top,  }\item[{int \texorpdfstring{$\ast$}{*}}]{error }\end{DoxyParamCaption})}
+
+
+
+Support function for calculation when encounter operator. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ср} & opearator id \\
+\hline
+{\em top} & -\/ pointer to stack \\
+\hline
+{\em error} & -\/ error variable \\
+\hline
+\end{DoxyParams}
+\Hypertarget{calculation_8c_a842e573b5940caf6081863326d3a0d11}\label{calculation_8c_a842e573b5940caf6081863326d3a0d11} 
+\index{calculation.c@{calculation.c}!string\_to\_num@{string\_to\_num}}
+\index{string\_to\_num@{string\_to\_num}!calculation.c@{calculation.c}}
+\doxysubsubsection{\texorpdfstring{string\_to\_num()}{string\_to\_num()}}
+{\footnotesize\ttfamily int string\+\_\+to\+\_\+num (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{double \texorpdfstring{$\ast$}{*}}]{x }\end{DoxyParamCaption})}
+
+
+
+Function that transform number from string format to double. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & pointer to string number \\
+\hline
+{\em x} & -\/ pointer to double number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+counter -\/ the number of characters read 
+\end{DoxyReturn}

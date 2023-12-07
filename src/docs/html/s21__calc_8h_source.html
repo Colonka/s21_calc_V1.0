@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21_calc: Исходный файл source/s21_calc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">s21_calc<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implenetation of me own vercion of calculator with graph creator and credit calculator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">s21_calc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="s21__calc_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef SRC_S21_CALC_H_s</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="s21__calc_8h.html#a9ffefbbbb870ba29ca1f14c9bd8d8f21">    7</a></span><span class="preprocessor">#define SRC_S21_CALC_H_</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Functions</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// ? - unary minus</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// i - sin</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// o - cos</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// t - tan</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// q - sqrt</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// n - ln</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// g - log</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// d - asin</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// v - acos</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// y - atan</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Priority</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// () - 1</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// +- - 2</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// */ - 3</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// ^ or functions - 4</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="unionvtype.html">   30</a></span><span class="keyword">union </span><a class="code hl_union" href="unionvtype.html">vtype</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="unionvtype.html#aa5d178874af9184d3235ef52b6b1c8f6">   31</a></span>  <span class="keywordtype">char</span> <a class="code hl_variable" href="unionvtype.html#aa5d178874af9184d3235ef52b6b1c8f6">op</a>;   </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="unionvtype.html#a1f260e6867bd2968fa262917576dd51f">   32</a></span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="unionvtype.html#a1f260e6867bd2968fa262917576dd51f">v</a>;  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structst__ack.html">   36</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structst__ack.html">st_ack</a> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structst__ack.html#ac2c16baf2a7e972113124602f6ec2199">   37</a></span>  <span class="keyword">union </span><a class="code hl_union" href="unionvtype.html">vtype</a> <a class="code hl_variable" href="structst__ack.html#ac2c16baf2a7e972113124602f6ec2199">val</a>;      </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structst__ack.html#a36ea71ab5c5ba9c4695b5263b4d4f813">   38</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structst__ack.html">st_ack</a>* <a class="code hl_variable" href="structst__ack.html#a36ea71ab5c5ba9c4695b5263b4d4f813">next</a>;  </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">   39</a></span>} <a class="code hl_typedef" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// MAIN</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a82da30a607ec0345769906bf1268697b">s21_calc</a>(<span class="keywordtype">char</span>* input_string, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span>* resultic);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// CALCULATION</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#a3f666cda5a971cd907b4856c164913d6">credit_ann</a>(<span class="keywordtype">double</span> sum, <span class="keywordtype">int</span> time, <span class="keywordtype">double</span> percent, <span class="keywordtype">double</span>* month_pay,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordtype">double</span>* overpay, <span class="keywordtype">double</span>* common_pay);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#a729ec76b11796254817e30a650c0b6e4">credit_diff</a>(<span class="keywordtype">double</span> sum, <span class="keywordtype">int</span> time, <span class="keywordtype">double</span> percent, <span class="keywordtype">double</span> remainder,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                 <span class="keywordtype">double</span>* month_pay, <span class="keywordtype">double</span>* overpay, <span class="keywordtype">int</span> cur_m);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#afbc8b95650893c9b349e88dd8504be17">calculation</a>(<span class="keywordtype">char</span>* input, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span>* result);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// SUPPORT FUNCTION</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#a1fdd3382b8ac0391dc5835ec07c04874">oper</a>(<span class="keywordtype">char</span> ch, <a class="code hl_struct" href="structst__ack.html">stack</a>** top, <span class="keywordtype">int</span>* error);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#a9707ea0cb997e605a804e178bb72cd6d">func</a>(<span class="keywordtype">char</span> ch, <a class="code hl_struct" href="structst__ack.html">stack</a>** top, <span class="keywordtype">int</span>* error);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a842e573b5940caf6081863326d3a0d11">string_to_num</a>(<span class="keywordtype">char</span>* str, <span class="keywordtype">double</span>* x);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">// REVERSE to POLISH NOTATION</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#a1d3b3b2b471daf5a05919e06ca692272">rpn</a>(<span class="keywordtype">char</span>* input, <span class="keywordtype">char</span>* output);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a0ab20fdd64b0ac84e7024ded81ee79ae">prec</a>(<span class="keywordtype">char</span> x);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">// STACK</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><a class="code hl_struct" href="structst__ack.html">stack</a>* <a class="code hl_function" href="s21__calc_8h.html#abc28752dce08d6587ae67ef7c277f685">init</a>(<span class="keyword">union</span> <a class="code hl_union" href="unionvtype.html">vtype</a> value);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#a3a597e7dd1114d1393bc9775a6146f5e">push</a>(<span class="keyword">union</span> <a class="code hl_union" href="unionvtype.html">vtype</a> value, <a class="code hl_struct" href="structst__ack.html">stack</a>** top);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">union </span><a class="code hl_union" href="unionvtype.html">vtype</a> <a class="code hl_function" href="s21__calc_8h.html#a31bdb8994fbe2a1ec8ca97c577ede99c">pop</a>(<a class="code hl_struct" href="structst__ack.html">stack</a>** top);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#aa0b580f5d8455bd0d204858094f6663b">destroy</a>(<a class="code hl_struct" href="structst__ack.html">stack</a>* top);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">// CHECKING AND READING</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a78e553a93b4bdf0127ef5b5fbb7014cd">check_input</a>(<span class="keywordtype">char</span>* in_equation, <span class="keywordtype">char</span>* out_equation);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// SUPPORT PARCING FUNCTIONS</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#a72dac6df945cff73524bcf2c0466f60f">number_check</a>(<span class="keywordtype">char</span>* form, <span class="keywordtype">int</span>* count, <span class="keywordtype">char</span>* out_equation);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a5a4d591365d55396cf3bf3be683b1803">check_trigon</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* form, <span class="keywordtype">char</span>* result);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#aae348f469432aeaf878f9aa48cd71ed8">check_minus</a>(<span class="keywordtype">char</span>* form, <span class="keywordtype">char</span>* out_equation);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a12230b422064aad0c50f7ea5c14840d9">afterminus</a>(<span class="keywordtype">char</span>* form);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keywordtype">void</span> <a class="code hl_function" href="s21__calc_8h.html#adaac1116c2b76c4c8ccf48e6c6df0f8c">check_bracket</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* form, <span class="keywordtype">int</span>* scob, <span class="keywordtype">char</span>* out_equation);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">// CHECKING ROLE</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a4c64f3c6fe42edf7f59e6572e18a1bbd">isNumber</a>(<span class="keywordtype">char</span> x);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a559f08973cb90110550e27c6b277cd26">isFunc</a>(<span class="keywordtype">char</span> x);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="keywordtype">int</span> <a class="code hl_function" href="s21__calc_8h.html#a887560f97d844f8413b8419ec57f8d3f">isOper</a>(<span class="keywordtype">char</span> x);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">#endif  </span><span class="comment">// SRC_S21_CALC_H_</span></div>
+<div class="ttc" id="as21__calc_8h_html_a0ab20fdd64b0ac84e7024ded81ee79ae"><div class="ttname"><a href="s21__calc_8h.html#a0ab20fdd64b0ac84e7024ded81ee79ae">prec</a></div><div class="ttdeci">int prec(char x)</div><div class="ttdoc">Priority determinant.</div><div class="ttdef"><b>Definition</b> reverse_to_pn.c:47</div></div>
+<div class="ttc" id="as21__calc_8h_html_a12230b422064aad0c50f7ea5c14840d9"><div class="ttname"><a href="s21__calc_8h.html#a12230b422064aad0c50f7ea5c14840d9">afterminus</a></div><div class="ttdeci">int afterminus(char *form)</div><div class="ttdoc">Checking &quot;-&quot; sign is unary or operator?</div><div class="ttdef"><b>Definition</b> check_input.c:153</div></div>
+<div class="ttc" id="as21__calc_8h_html_a148bc9265c8fcd49d620ad2ce7546549"><div class="ttname"><a href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a></div><div class="ttdeci">struct st_ack stack</div><div class="ttdoc">struct that content node of the list</div></div>
+<div class="ttc" id="as21__calc_8h_html_a1d3b3b2b471daf5a05919e06ca692272"><div class="ttname"><a href="s21__calc_8h.html#a1d3b3b2b471daf5a05919e06ca692272">rpn</a></div><div class="ttdeci">void rpn(char *input, char *output)</div><div class="ttdoc">Transform infix string to revers polish string.</div><div class="ttdef"><b>Definition</b> reverse_to_pn.c:3</div></div>
+<div class="ttc" id="as21__calc_8h_html_a1fdd3382b8ac0391dc5835ec07c04874"><div class="ttname"><a href="s21__calc_8h.html#a1fdd3382b8ac0391dc5835ec07c04874">oper</a></div><div class="ttdeci">void oper(char ch, stack **top, int *error)</div><div class="ttdoc">Support function for calculation when encounter operator.</div><div class="ttdef"><b>Definition</b> calculation.c:26</div></div>
+<div class="ttc" id="as21__calc_8h_html_a31bdb8994fbe2a1ec8ca97c577ede99c"><div class="ttname"><a href="s21__calc_8h.html#a31bdb8994fbe2a1ec8ca97c577ede99c">pop</a></div><div class="ttdeci">union vtype pop(stack **top)</div><div class="ttdoc">Recieving value of node from stack.</div><div class="ttdef"><b>Definition</b> stack.c:21</div></div>
+<div class="ttc" id="as21__calc_8h_html_a3a597e7dd1114d1393bc9775a6146f5e"><div class="ttname"><a href="s21__calc_8h.html#a3a597e7dd1114d1393bc9775a6146f5e">push</a></div><div class="ttdeci">void push(union vtype value, stack **top)</div><div class="ttdoc">Add node to stack.</div><div class="ttdef"><b>Definition</b> stack.c:10</div></div>
+<div class="ttc" id="as21__calc_8h_html_a3f666cda5a971cd907b4856c164913d6"><div class="ttname"><a href="s21__calc_8h.html#a3f666cda5a971cd907b4856c164913d6">credit_ann</a></div><div class="ttdeci">void credit_ann(double sum, int time, double percent, double *month_pay, double *overpay, double *common_pay)</div><div class="ttdoc">The function of calling the calculation of the credit (annuity)</div><div class="ttdef"><b>Definition</b> credit.c:3</div></div>
+<div class="ttc" id="as21__calc_8h_html_a4c64f3c6fe42edf7f59e6572e18a1bbd"><div class="ttname"><a href="s21__calc_8h.html#a4c64f3c6fe42edf7f59e6572e18a1bbd">isNumber</a></div><div class="ttdeci">int isNumber(char x)</div><div class="ttdoc">Checking item is number or no.</div><div class="ttdef"><b>Definition</b> checking_role.c:16</div></div>
+<div class="ttc" id="as21__calc_8h_html_a559f08973cb90110550e27c6b277cd26"><div class="ttname"><a href="s21__calc_8h.html#a559f08973cb90110550e27c6b277cd26">isFunc</a></div><div class="ttdeci">int isFunc(char x)</div><div class="ttdoc">Checking item is function or no.</div><div class="ttdef"><b>Definition</b> checking_role.c:3</div></div>
+<div class="ttc" id="as21__calc_8h_html_a5a4d591365d55396cf3bf3be683b1803"><div class="ttname"><a href="s21__calc_8h.html#a5a4d591365d55396cf3bf3be683b1803">check_trigon</a></div><div class="ttdeci">int check_trigon(const char *form, char *result)</div><div class="ttdoc">Checking when encounter function in equation string.</div><div class="ttdef"><b>Definition</b> check_input.c:80</div></div>
+<div class="ttc" id="as21__calc_8h_html_a729ec76b11796254817e30a650c0b6e4"><div class="ttname"><a href="s21__calc_8h.html#a729ec76b11796254817e30a650c0b6e4">credit_diff</a></div><div class="ttdeci">void credit_diff(double sum, int time, double percent, double remainder, double *month_pay, double *overpay, int cur_m)</div><div class="ttdoc">The function of calling the calculation of the credit (differentional)</div><div class="ttdef"><b>Definition</b> credit.c:12</div></div>
+<div class="ttc" id="as21__calc_8h_html_a72dac6df945cff73524bcf2c0466f60f"><div class="ttname"><a href="s21__calc_8h.html#a72dac6df945cff73524bcf2c0466f60f">number_check</a></div><div class="ttdeci">void number_check(char *form, int *count, char *out_equation)</div><div class="ttdoc">Checking when encounter number in equation string.</div><div class="ttdef"><b>Definition</b> check_input.c:44</div></div>
+<div class="ttc" id="as21__calc_8h_html_a78e553a93b4bdf0127ef5b5fbb7014cd"><div class="ttname"><a href="s21__calc_8h.html#a78e553a93b4bdf0127ef5b5fbb7014cd">check_input</a></div><div class="ttdeci">int check_input(char *in_equation, char *out_equation)</div><div class="ttdoc">Main parcing input eqaution string function.</div><div class="ttdef"><b>Definition</b> check_input.c:3</div></div>
+<div class="ttc" id="as21__calc_8h_html_a82da30a607ec0345769906bf1268697b"><div class="ttname"><a href="s21__calc_8h.html#a82da30a607ec0345769906bf1268697b">s21_calc</a></div><div class="ttdeci">int s21_calc(char *input_string, double x, double *resultic)</div><div class="ttdoc">Calculator function (full cycle)</div><div class="ttdef"><b>Definition</b> s21_calc.c:3</div></div>
+<div class="ttc" id="as21__calc_8h_html_a842e573b5940caf6081863326d3a0d11"><div class="ttname"><a href="s21__calc_8h.html#a842e573b5940caf6081863326d3a0d11">string_to_num</a></div><div class="ttdeci">int string_to_num(char *str, double *x)</div><div class="ttdoc">Function that transform number from string format to double.</div><div class="ttdef"><b>Definition</b> calculation.c:59</div></div>
+<div class="ttc" id="as21__calc_8h_html_a887560f97d844f8413b8419ec57f8d3f"><div class="ttname"><a href="s21__calc_8h.html#a887560f97d844f8413b8419ec57f8d3f">isOper</a></div><div class="ttdeci">int isOper(char x)</div><div class="ttdoc">Checking item is operator or no.</div><div class="ttdef"><b>Definition</b> checking_role.c:10</div></div>
+<div class="ttc" id="as21__calc_8h_html_a9707ea0cb997e605a804e178bb72cd6d"><div class="ttname"><a href="s21__calc_8h.html#a9707ea0cb997e605a804e178bb72cd6d">func</a></div><div class="ttdeci">void func(char ch, stack **top, int *error)</div><div class="ttdoc">Support function for calculation when encounter function.</div><div class="ttdef"><b>Definition</b> calculation.c:86</div></div>
+<div class="ttc" id="as21__calc_8h_html_aa0b580f5d8455bd0d204858094f6663b"><div class="ttname"><a href="s21__calc_8h.html#aa0b580f5d8455bd0d204858094f6663b">destroy</a></div><div class="ttdeci">void destroy(stack *top)</div><div class="ttdoc">Stack removing.</div><div class="ttdef"><b>Definition</b> stack.c:32</div></div>
+<div class="ttc" id="as21__calc_8h_html_aae348f469432aeaf878f9aa48cd71ed8"><div class="ttname"><a href="s21__calc_8h.html#aae348f469432aeaf878f9aa48cd71ed8">check_minus</a></div><div class="ttdeci">void check_minus(char *form, char *out_equation)</div><div class="ttdoc">Checking when encounter &quot;-&quot; in equation string.</div><div class="ttdef"><b>Definition</b> check_input.c:137</div></div>
+<div class="ttc" id="as21__calc_8h_html_abc28752dce08d6587ae67ef7c277f685"><div class="ttname"><a href="s21__calc_8h.html#abc28752dce08d6587ae67ef7c277f685">init</a></div><div class="ttdeci">stack * init(union vtype value)</div><div class="ttdoc">Stack initialization.</div><div class="ttdef"><b>Definition</b> stack.c:3</div></div>
+<div class="ttc" id="as21__calc_8h_html_adaac1116c2b76c4c8ccf48e6c6df0f8c"><div class="ttname"><a href="s21__calc_8h.html#adaac1116c2b76c4c8ccf48e6c6df0f8c">check_bracket</a></div><div class="ttdeci">void check_bracket(const char *form, int *scob, char *out_equation)</div><div class="ttdoc">Checking when encounter &quot;(&quot; or &quot;)&quot; in equation string.</div><div class="ttdef"><b>Definition</b> check_input.c:167</div></div>
+<div class="ttc" id="as21__calc_8h_html_afbc8b95650893c9b349e88dd8504be17"><div class="ttname"><a href="s21__calc_8h.html#afbc8b95650893c9b349e88dd8504be17">calculation</a></div><div class="ttdeci">int calculation(char *input, double x, double *result)</div><div class="ttdoc">Only calculation function.</div><div class="ttdef"><b>Definition</b> calculation.c:3</div></div>
+<div class="ttc" id="astructst__ack_html"><div class="ttname"><a href="structst__ack.html">st_ack</a></div><div class="ttdoc">struct that content node of the list</div><div class="ttdef"><b>Definition</b> s21_calc.h:36</div></div>
+<div class="ttc" id="astructst__ack_html_a36ea71ab5c5ba9c4695b5263b4d4f813"><div class="ttname"><a href="structst__ack.html#a36ea71ab5c5ba9c4695b5263b4d4f813">st_ack::next</a></div><div class="ttdeci">struct st_ack * next</div><div class="ttdoc">pointer to the next node</div><div class="ttdef"><b>Definition</b> s21_calc.h:38</div></div>
+<div class="ttc" id="astructst__ack_html_ac2c16baf2a7e972113124602f6ec2199"><div class="ttname"><a href="structst__ack.html#ac2c16baf2a7e972113124602f6ec2199">st_ack::val</a></div><div class="ttdeci">union vtype val</div><div class="ttdoc">Value.</div><div class="ttdef"><b>Definition</b> s21_calc.h:37</div></div>
+<div class="ttc" id="aunionvtype_html"><div class="ttname"><a href="unionvtype.html">vtype</a></div><div class="ttdoc">union that content equation's item</div><div class="ttdef"><b>Definition</b> s21_calc.h:30</div></div>
+<div class="ttc" id="aunionvtype_html_a1f260e6867bd2968fa262917576dd51f"><div class="ttname"><a href="unionvtype.html#a1f260e6867bd2968fa262917576dd51f">vtype::v</a></div><div class="ttdeci">double v</div><div class="ttdoc">Value.</div><div class="ttdef"><b>Definition</b> s21_calc.h:32</div></div>
+<div class="ttc" id="aunionvtype_html_aa5d178874af9184d3235ef52b6b1c8f6"><div class="ttname"><a href="unionvtype.html#aa5d178874af9184d3235ef52b6b1c8f6">vtype::op</a></div><div class="ttdeci">char op</div><div class="ttdoc">Operator.</div><div class="ttdef"><b>Definition</b> s21_calc.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

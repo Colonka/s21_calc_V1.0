@@ -1,0 +1,134 @@
+\doxysection{Файл source/check\+\_\+input.c}
+\hypertarget{check__input_8c}{}\label{check__input_8c}\index{source/check\_input.c@{source/check\_input.c}}
+{\ttfamily \#include \"{}s21\+\_\+calc.\+h\"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{check__input_8c_a78e553a93b4bdf0127ef5b5fbb7014cd}{check\+\_\+input}} (char \texorpdfstring{$\ast$}{*}in\+\_\+equation, char \texorpdfstring{$\ast$}{*}out\+\_\+equation)
+\begin{DoxyCompactList}\small\item\em Main parcing input eqaution string function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{check__input_8c_a72dac6df945cff73524bcf2c0466f60f}{number\+\_\+check}} (char \texorpdfstring{$\ast$}{*}form, int \texorpdfstring{$\ast$}{*}count, char \texorpdfstring{$\ast$}{*}out\+\_\+equation)
+\begin{DoxyCompactList}\small\item\em Checking when encounter number in equation string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{check__input_8c_a5a4d591365d55396cf3bf3be683b1803}{check\+\_\+trigon}} (const char \texorpdfstring{$\ast$}{*}form, char \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Checking when encounter function in equation string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{check__input_8c_aae348f469432aeaf878f9aa48cd71ed8}{check\+\_\+minus}} (char \texorpdfstring{$\ast$}{*}form, char \texorpdfstring{$\ast$}{*}out\+\_\+equation)
+\begin{DoxyCompactList}\small\item\em Checking when encounter \"{}-\/\"{} in equation string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{check__input_8c_a12230b422064aad0c50f7ea5c14840d9}{afterminus}} (char \texorpdfstring{$\ast$}{*}form)
+\begin{DoxyCompactList}\small\item\em Checking \"{}-\/\"{} sign is unary or operator? \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{check__input_8c_adaac1116c2b76c4c8ccf48e6c6df0f8c}{check\+\_\+bracket}} (const char \texorpdfstring{$\ast$}{*}form, int \texorpdfstring{$\ast$}{*}scob, char \texorpdfstring{$\ast$}{*}out\+\_\+equation)
+\begin{DoxyCompactList}\small\item\em Checking when encounter \"{}(\"{} or \"{})\"{} in equation string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\Hypertarget{check__input_8c_a12230b422064aad0c50f7ea5c14840d9}\label{check__input_8c_a12230b422064aad0c50f7ea5c14840d9} 
+\index{check\_input.c@{check\_input.c}!afterminus@{afterminus}}
+\index{afterminus@{afterminus}!check\_input.c@{check\_input.c}}
+\doxysubsubsection{\texorpdfstring{afterminus()}{afterminus()}}
+{\footnotesize\ttfamily int afterminus (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{form }\end{DoxyParamCaption})}
+
+
+
+Checking \"{}-\/\"{} sign is unary or operator? 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 -\/ operator, 1 -\/ unary minus 
+\end{DoxyReturn}
+\Hypertarget{check__input_8c_adaac1116c2b76c4c8ccf48e6c6df0f8c}\label{check__input_8c_adaac1116c2b76c4c8ccf48e6c6df0f8c} 
+\index{check\_input.c@{check\_input.c}!check\_bracket@{check\_bracket}}
+\index{check\_bracket@{check\_bracket}!check\_input.c@{check\_input.c}}
+\doxysubsubsection{\texorpdfstring{check\_bracket()}{check\_bracket()}}
+{\footnotesize\ttfamily void check\+\_\+bracket (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{form,  }\item[{int \texorpdfstring{$\ast$}{*}}]{scob,  }\item[{char \texorpdfstring{$\ast$}{*}}]{out\+\_\+equation }\end{DoxyParamCaption})}
+
+
+
+Checking when encounter \"{}(\"{} or \"{})\"{} in equation string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+{\em scob} & variable that show bracket is closed or no(even -\/ closed, odd -\/ opened) \\
+\hline
+{\em out\+\_\+equation} & pointer to parced string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{check__input_8c_a78e553a93b4bdf0127ef5b5fbb7014cd}\label{check__input_8c_a78e553a93b4bdf0127ef5b5fbb7014cd} 
+\index{check\_input.c@{check\_input.c}!check\_input@{check\_input}}
+\index{check\_input@{check\_input}!check\_input.c@{check\_input.c}}
+\doxysubsubsection{\texorpdfstring{check\_input()}{check\_input()}}
+{\footnotesize\ttfamily int check\+\_\+input (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{in\+\_\+equation,  }\item[{char \texorpdfstring{$\ast$}{*}}]{out\+\_\+equation }\end{DoxyParamCaption})}
+
+
+
+Main parcing input eqaution string function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em in\+\_\+equation} & pointer to input eqaution string \\
+\hline
+{\em out\+\_\+equation} & pointer to parced eqaution string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+error code 1 -\/ ok, 0 -\/ invalid input 
+\end{DoxyReturn}
+\Hypertarget{check__input_8c_aae348f469432aeaf878f9aa48cd71ed8}\label{check__input_8c_aae348f469432aeaf878f9aa48cd71ed8} 
+\index{check\_input.c@{check\_input.c}!check\_minus@{check\_minus}}
+\index{check\_minus@{check\_minus}!check\_input.c@{check\_input.c}}
+\doxysubsubsection{\texorpdfstring{check\_minus()}{check\_minus()}}
+{\footnotesize\ttfamily void check\+\_\+minus (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{form,  }\item[{char \texorpdfstring{$\ast$}{*}}]{out\+\_\+equation }\end{DoxyParamCaption})}
+
+
+
+Checking when encounter \"{}-\/\"{} in equation string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+{\em out\+\_\+equation} & pointer to parced string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{check__input_8c_a5a4d591365d55396cf3bf3be683b1803}\label{check__input_8c_a5a4d591365d55396cf3bf3be683b1803} 
+\index{check\_input.c@{check\_input.c}!check\_trigon@{check\_trigon}}
+\index{check\_trigon@{check\_trigon}!check\_input.c@{check\_input.c}}
+\doxysubsubsection{\texorpdfstring{check\_trigon()}{check\_trigon()}}
+{\footnotesize\ttfamily int check\+\_\+trigon (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{form,  }\item[{char \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Checking when encounter function in equation string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+{\em result} & pointer to parced string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+amount of checking items 
+\end{DoxyReturn}
+\Hypertarget{check__input_8c_a72dac6df945cff73524bcf2c0466f60f}\label{check__input_8c_a72dac6df945cff73524bcf2c0466f60f} 
+\index{check\_input.c@{check\_input.c}!number\_check@{number\_check}}
+\index{number\_check@{number\_check}!check\_input.c@{check\_input.c}}
+\doxysubsubsection{\texorpdfstring{number\_check()}{number\_check()}}
+{\footnotesize\ttfamily void number\+\_\+check (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{form,  }\item[{int \texorpdfstring{$\ast$}{*}}]{count,  }\item[{char \texorpdfstring{$\ast$}{*}}]{out\+\_\+equation }\end{DoxyParamCaption})}
+
+
+
+Checking when encounter number in equation string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+{\em count} & variable that content amount of checking items \\
+\hline
+{\em out\+\_\+equation} & pointer to parced string \\
+\hline
+\end{DoxyParams}

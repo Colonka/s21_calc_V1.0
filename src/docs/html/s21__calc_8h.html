@@ -1,0 +1,1063 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21_calc: Файл source/s21_calc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">s21_calc<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implenetation of me own vercion of calculator with graph creator and credit calculator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл s21_calc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="s21__calc_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionvtype.html">vtype</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">union that content equation's item  <a href="unionvtype.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__ack.html">st_ack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct that content node of the list  <a href="structst__ack.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a9ffefbbbb870ba29ca1f14c9bd8d8f21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a9ffefbbbb870ba29ca1f14c9bd8d8f21">SRC_S21_CALC_H_</a></td></tr>
+<tr class="separator:a9ffefbbbb870ba29ca1f14c9bd8d8f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a148bc9265c8fcd49d620ad2ce7546549"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structst__ack.html">st_ack</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a></td></tr>
+<tr class="memdesc:a148bc9265c8fcd49d620ad2ce7546549"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct that content node of the list  <br /></td></tr>
+<tr class="separator:a148bc9265c8fcd49d620ad2ce7546549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a82da30a607ec0345769906bf1268697b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a82da30a607ec0345769906bf1268697b">s21_calc</a> (char *input_string, double x, double *resultic)</td></tr>
+<tr class="memdesc:a82da30a607ec0345769906bf1268697b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculator function (full cycle)  <br /></td></tr>
+<tr class="separator:a82da30a607ec0345769906bf1268697b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f666cda5a971cd907b4856c164913d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a3f666cda5a971cd907b4856c164913d6">credit_ann</a> (double sum, int time, double percent, double *month_pay, double *overpay, double *common_pay)</td></tr>
+<tr class="memdesc:a3f666cda5a971cd907b4856c164913d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function of calling the calculation of the credit (annuity)  <br /></td></tr>
+<tr class="separator:a3f666cda5a971cd907b4856c164913d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729ec76b11796254817e30a650c0b6e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a729ec76b11796254817e30a650c0b6e4">credit_diff</a> (double sum, int time, double percent, double remainder, double *month_pay, double *overpay, int cur_m)</td></tr>
+<tr class="memdesc:a729ec76b11796254817e30a650c0b6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function of calling the calculation of the credit (differentional)  <br /></td></tr>
+<tr class="separator:a729ec76b11796254817e30a650c0b6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc8b95650893c9b349e88dd8504be17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#afbc8b95650893c9b349e88dd8504be17">calculation</a> (char *input, double x, double *result)</td></tr>
+<tr class="memdesc:afbc8b95650893c9b349e88dd8504be17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only calculation function.  <br /></td></tr>
+<tr class="separator:afbc8b95650893c9b349e88dd8504be17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fdd3382b8ac0391dc5835ec07c04874"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a1fdd3382b8ac0391dc5835ec07c04874">oper</a> (char ch, <a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **top, int *error)</td></tr>
+<tr class="memdesc:a1fdd3382b8ac0391dc5835ec07c04874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support function for calculation when encounter operator.  <br /></td></tr>
+<tr class="separator:a1fdd3382b8ac0391dc5835ec07c04874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9707ea0cb997e605a804e178bb72cd6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a9707ea0cb997e605a804e178bb72cd6d">func</a> (char ch, <a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **top, int *error)</td></tr>
+<tr class="memdesc:a9707ea0cb997e605a804e178bb72cd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support function for calculation when encounter function.  <br /></td></tr>
+<tr class="separator:a9707ea0cb997e605a804e178bb72cd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842e573b5940caf6081863326d3a0d11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a842e573b5940caf6081863326d3a0d11">string_to_num</a> (char *str, double *x)</td></tr>
+<tr class="memdesc:a842e573b5940caf6081863326d3a0d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that transform number from string format to double.  <br /></td></tr>
+<tr class="separator:a842e573b5940caf6081863326d3a0d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3b3b2b471daf5a05919e06ca692272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a1d3b3b2b471daf5a05919e06ca692272">rpn</a> (char *input, char *output)</td></tr>
+<tr class="memdesc:a1d3b3b2b471daf5a05919e06ca692272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform infix string to revers polish string.  <br /></td></tr>
+<tr class="separator:a1d3b3b2b471daf5a05919e06ca692272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab20fdd64b0ac84e7024ded81ee79ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a0ab20fdd64b0ac84e7024ded81ee79ae">prec</a> (char x)</td></tr>
+<tr class="memdesc:a0ab20fdd64b0ac84e7024ded81ee79ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Priority determinant.  <br /></td></tr>
+<tr class="separator:a0ab20fdd64b0ac84e7024ded81ee79ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc28752dce08d6587ae67ef7c277f685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#abc28752dce08d6587ae67ef7c277f685">init</a> (union <a class="el" href="unionvtype.html">vtype</a> value)</td></tr>
+<tr class="memdesc:abc28752dce08d6587ae67ef7c277f685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack initialization.  <br /></td></tr>
+<tr class="separator:abc28752dce08d6587ae67ef7c277f685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a597e7dd1114d1393bc9775a6146f5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a3a597e7dd1114d1393bc9775a6146f5e">push</a> (union <a class="el" href="unionvtype.html">vtype</a> value, <a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **top)</td></tr>
+<tr class="memdesc:a3a597e7dd1114d1393bc9775a6146f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add node to stack.  <br /></td></tr>
+<tr class="separator:a3a597e7dd1114d1393bc9775a6146f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31bdb8994fbe2a1ec8ca97c577ede99c"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionvtype.html">vtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a31bdb8994fbe2a1ec8ca97c577ede99c">pop</a> (<a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **top)</td></tr>
+<tr class="memdesc:a31bdb8994fbe2a1ec8ca97c577ede99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recieving value of node from stack.  <br /></td></tr>
+<tr class="separator:a31bdb8994fbe2a1ec8ca97c577ede99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b580f5d8455bd0d204858094f6663b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#aa0b580f5d8455bd0d204858094f6663b">destroy</a> (<a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> *top)</td></tr>
+<tr class="memdesc:aa0b580f5d8455bd0d204858094f6663b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack removing.  <br /></td></tr>
+<tr class="separator:aa0b580f5d8455bd0d204858094f6663b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e553a93b4bdf0127ef5b5fbb7014cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a78e553a93b4bdf0127ef5b5fbb7014cd">check_input</a> (char *in_equation, char *out_equation)</td></tr>
+<tr class="memdesc:a78e553a93b4bdf0127ef5b5fbb7014cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main parcing input eqaution string function.  <br /></td></tr>
+<tr class="separator:a78e553a93b4bdf0127ef5b5fbb7014cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72dac6df945cff73524bcf2c0466f60f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a72dac6df945cff73524bcf2c0466f60f">number_check</a> (char *form, int *count, char *out_equation)</td></tr>
+<tr class="memdesc:a72dac6df945cff73524bcf2c0466f60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking when encounter number in equation string.  <br /></td></tr>
+<tr class="separator:a72dac6df945cff73524bcf2c0466f60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4d591365d55396cf3bf3be683b1803"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a5a4d591365d55396cf3bf3be683b1803">check_trigon</a> (const char *form, char *result)</td></tr>
+<tr class="memdesc:a5a4d591365d55396cf3bf3be683b1803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking when encounter function in equation string.  <br /></td></tr>
+<tr class="separator:a5a4d591365d55396cf3bf3be683b1803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae348f469432aeaf878f9aa48cd71ed8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#aae348f469432aeaf878f9aa48cd71ed8">check_minus</a> (char *form, char *out_equation)</td></tr>
+<tr class="memdesc:aae348f469432aeaf878f9aa48cd71ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking when encounter "-" in equation string.  <br /></td></tr>
+<tr class="separator:aae348f469432aeaf878f9aa48cd71ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12230b422064aad0c50f7ea5c14840d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a12230b422064aad0c50f7ea5c14840d9">afterminus</a> (char *form)</td></tr>
+<tr class="memdesc:a12230b422064aad0c50f7ea5c14840d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking "-" sign is unary or operator?  <br /></td></tr>
+<tr class="separator:a12230b422064aad0c50f7ea5c14840d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaac1116c2b76c4c8ccf48e6c6df0f8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#adaac1116c2b76c4c8ccf48e6c6df0f8c">check_bracket</a> (const char *form, int *scob, char *out_equation)</td></tr>
+<tr class="memdesc:adaac1116c2b76c4c8ccf48e6c6df0f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking when encounter "(" or ")" in equation string.  <br /></td></tr>
+<tr class="separator:adaac1116c2b76c4c8ccf48e6c6df0f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c64f3c6fe42edf7f59e6572e18a1bbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a4c64f3c6fe42edf7f59e6572e18a1bbd">isNumber</a> (char x)</td></tr>
+<tr class="memdesc:a4c64f3c6fe42edf7f59e6572e18a1bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking item is number or no.  <br /></td></tr>
+<tr class="separator:a4c64f3c6fe42edf7f59e6572e18a1bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559f08973cb90110550e27c6b277cd26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a559f08973cb90110550e27c6b277cd26">isFunc</a> (char x)</td></tr>
+<tr class="memdesc:a559f08973cb90110550e27c6b277cd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking item is function or no.  <br /></td></tr>
+<tr class="separator:a559f08973cb90110550e27c6b277cd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887560f97d844f8413b8419ec57f8d3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s21__calc_8h.html#a887560f97d844f8413b8419ec57f8d3f">isOper</a> (char x)</td></tr>
+<tr class="memdesc:a887560f97d844f8413b8419ec57f8d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking item is operator or no.  <br /></td></tr>
+<tr class="separator:a887560f97d844f8413b8419ec57f8d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a9ffefbbbb870ba29ca1f14c9bd8d8f21" name="a9ffefbbbb870ba29ca1f14c9bd8d8f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ffefbbbb870ba29ca1f14c9bd8d8f21">&#9670;&#160;</a></span>SRC_S21_CALC_H_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SRC_S21_CALC_H_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a id="a148bc9265c8fcd49d620ad2ce7546549" name="a148bc9265c8fcd49d620ad2ce7546549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148bc9265c8fcd49d620ad2ce7546549">&#9670;&#160;</a></span>stack</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structst__ack.html">st_ack</a> <a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>struct that content node of the list </p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a12230b422064aad0c50f7ea5c14840d9" name="a12230b422064aad0c50f7ea5c14840d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12230b422064aad0c50f7ea5c14840d9">&#9670;&#160;</a></span>afterminus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int afterminus </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>form</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking "-" sign is unary or operator? </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">form</td><td>pointer to parcing string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 - operator, 1 - unary minus </dd></dl>
+
+</div>
+</div>
+<a id="afbc8b95650893c9b349e88dd8504be17" name="afbc8b95650893c9b349e88dd8504be17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc8b95650893c9b349e88dd8504be17">&#9670;&#160;</a></span>calculation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int calculation </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Only calculation function. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>pointer to the input equation string </td></tr>
+    <tr><td class="paramname">x</td><td>- value х </td></tr>
+    <tr><td class="paramname">result</td><td>- calculation result </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>code error 1 - ok, 0 - error, 2 - inf </dd></dl>
+
+</div>
+</div>
+<a id="adaac1116c2b76c4c8ccf48e6c6df0f8c" name="adaac1116c2b76c4c8ccf48e6c6df0f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaac1116c2b76c4c8ccf48e6c6df0f8c">&#9670;&#160;</a></span>check_bracket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void check_bracket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>scob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_equation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking when encounter "(" or ")" in equation string. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">form</td><td>pointer to parcing string </td></tr>
+    <tr><td class="paramname">scob</td><td>variable that show bracket is closed or no(even - closed, odd - opened) </td></tr>
+    <tr><td class="paramname">out_equation</td><td>pointer to parced string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a78e553a93b4bdf0127ef5b5fbb7014cd" name="a78e553a93b4bdf0127ef5b5fbb7014cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e553a93b4bdf0127ef5b5fbb7014cd">&#9670;&#160;</a></span>check_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_input </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>in_equation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_equation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main parcing input eqaution string function. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_equation</td><td>pointer to input eqaution string </td></tr>
+    <tr><td class="paramname">out_equation</td><td>pointer to parced eqaution string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>error code 1 - ok, 0 - invalid input </dd></dl>
+
+</div>
+</div>
+<a id="aae348f469432aeaf878f9aa48cd71ed8" name="aae348f469432aeaf878f9aa48cd71ed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae348f469432aeaf878f9aa48cd71ed8">&#9670;&#160;</a></span>check_minus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void check_minus </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_equation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking when encounter "-" in equation string. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">form</td><td>pointer to parcing string </td></tr>
+    <tr><td class="paramname">out_equation</td><td>pointer to parced string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a4d591365d55396cf3bf3be683b1803" name="a5a4d591365d55396cf3bf3be683b1803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a4d591365d55396cf3bf3be683b1803">&#9670;&#160;</a></span>check_trigon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_trigon </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking when encounter function in equation string. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">form</td><td>pointer to parcing string </td></tr>
+    <tr><td class="paramname">result</td><td>pointer to parced string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>amount of checking items </dd></dl>
+
+</div>
+</div>
+<a id="a3f666cda5a971cd907b4856c164913d6" name="a3f666cda5a971cd907b4856c164913d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f666cda5a971cd907b4856c164913d6">&#9670;&#160;</a></span>credit_ann()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void credit_ann </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>percent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>month_pay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>overpay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>common_pay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The function of calling the calculation of the credit (annuity) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sum</td><td>- credit sum </td></tr>
+    <tr><td class="paramname">time</td><td>- credit term </td></tr>
+    <tr><td class="paramname">percent</td><td>- annual interest rate </td></tr>
+    <tr><td class="paramname">month_pay</td><td>- monthly pay </td></tr>
+    <tr><td class="paramname">overpay</td><td>- overpay sum </td></tr>
+    <tr><td class="paramname">common_pay</td><td>- summury pay </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a729ec76b11796254817e30a650c0b6e4" name="a729ec76b11796254817e30a650c0b6e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729ec76b11796254817e30a650c0b6e4">&#9670;&#160;</a></span>credit_diff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void credit_diff </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>percent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>remainder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>month_pay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>overpay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cur_m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The function of calling the calculation of the credit (differentional) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sum</td><td>- credit sum </td></tr>
+    <tr><td class="paramname">time</td><td>- credit term </td></tr>
+    <tr><td class="paramname">percent</td><td>- annual interest rate </td></tr>
+    <tr><td class="paramname">remainder</td><td>- credit sum remainder </td></tr>
+    <tr><td class="paramname">month_pay</td><td>- monthly pay </td></tr>
+    <tr><td class="paramname">overpay</td><td>- overpay sum </td></tr>
+    <tr><td class="paramname">cur_m</td><td>- current month </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa0b580f5d8455bd0d204858094f6663b" name="aa0b580f5d8455bd0d204858094f6663b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0b580f5d8455bd0d204858094f6663b">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> *&#160;</td>
+          <td class="paramname"><em>top</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stack removing. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">указатель</td><td>pointer to removing stack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9707ea0cb997e605a804e178bb72cd6d" name="a9707ea0cb997e605a804e178bb72cd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9707ea0cb997e605a804e178bb72cd6d">&#9670;&#160;</a></span>func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void func </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Support function for calculation when encounter function. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">сh</td><td>func id </td></tr>
+    <tr><td class="paramname">top</td><td>- pointer to stack </td></tr>
+    <tr><td class="paramname">error</td><td>- error variable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc28752dce08d6587ae67ef7c277f685" name="abc28752dce08d6587ae67ef7c277f685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc28752dce08d6587ae67ef7c277f685">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> * init </td>
+          <td>(</td>
+          <td class="paramtype">union <a class="el" href="unionvtype.html">vtype</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stack initialization. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>pointer to created stack </dd></dl>
+
+</div>
+</div>
+<a id="a559f08973cb90110550e27c6b277cd26" name="a559f08973cb90110550e27c6b277cd26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559f08973cb90110550e27c6b277cd26">&#9670;&#160;</a></span>isFunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isFunc </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking item is function or no. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>checking item </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 - not a function, 1 - function </dd></dl>
+
+</div>
+</div>
+<a id="a4c64f3c6fe42edf7f59e6572e18a1bbd" name="a4c64f3c6fe42edf7f59e6572e18a1bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c64f3c6fe42edf7f59e6572e18a1bbd">&#9670;&#160;</a></span>isNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isNumber </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking item is number or no. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>checking item </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 - not a number, 1 - int number, 2 - float number </dd></dl>
+
+</div>
+</div>
+<a id="a887560f97d844f8413b8419ec57f8d3f" name="a887560f97d844f8413b8419ec57f8d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887560f97d844f8413b8419ec57f8d3f">&#9670;&#160;</a></span>isOper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isOper </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking item is operator or no. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>checking item </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 - not a operator, 1 - operator </dd></dl>
+
+</div>
+</div>
+<a id="a72dac6df945cff73524bcf2c0466f60f" name="a72dac6df945cff73524bcf2c0466f60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72dac6df945cff73524bcf2c0466f60f">&#9670;&#160;</a></span>number_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void number_check </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_equation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checking when encounter number in equation string. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">form</td><td>pointer to parcing string </td></tr>
+    <tr><td class="paramname">count</td><td>variable that content amount of checking items </td></tr>
+    <tr><td class="paramname">out_equation</td><td>pointer to parced string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1fdd3382b8ac0391dc5835ec07c04874" name="a1fdd3382b8ac0391dc5835ec07c04874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fdd3382b8ac0391dc5835ec07c04874">&#9670;&#160;</a></span>oper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oper </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Support function for calculation when encounter operator. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ср</td><td>opearator id </td></tr>
+    <tr><td class="paramname">top</td><td>- pointer to stack </td></tr>
+    <tr><td class="paramname">error</td><td>- error variable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a31bdb8994fbe2a1ec8ca97c577ede99c" name="a31bdb8994fbe2a1ec8ca97c577ede99c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31bdb8994fbe2a1ec8ca97c577ede99c">&#9670;&#160;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union <a class="el" href="unionvtype.html">vtype</a> pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **&#160;</td>
+          <td class="paramname"><em>top</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recieving value of node from stack. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">указатель</td><td>pointer to stack </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>value of node's </dd></dl>
+
+</div>
+</div>
+<a id="a0ab20fdd64b0ac84e7024ded81ee79ae" name="a0ab20fdd64b0ac84e7024ded81ee79ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab20fdd64b0ac84e7024ded81ee79ae">&#9670;&#160;</a></span>prec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int prec </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Priority determinant. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>checking item </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>priority 1||2||3||4 </dd></dl>
+
+</div>
+</div>
+<a id="a3a597e7dd1114d1393bc9775a6146f5e" name="a3a597e7dd1114d1393bc9775a6146f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a597e7dd1114d1393bc9775a6146f5e">&#9670;&#160;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push </td>
+          <td>(</td>
+          <td class="paramtype">union <a class="el" href="unionvtype.html">vtype</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **&#160;</td>
+          <td class="paramname"><em>top</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add node to stack. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>value </td></tr>
+    <tr><td class="paramname">указатель</td><td>pointer to stack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d3b3b2b471daf5a05919e06ca692272" name="a1d3b3b2b471daf5a05919e06ca692272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3b3b2b471daf5a05919e06ca692272">&#9670;&#160;</a></span>rpn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rpn </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transform infix string to revers polish string. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_equation</td><td>pointer to infix string </td></tr>
+    <tr><td class="paramname">out_equation</td><td>pointer to reverse polish string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82da30a607ec0345769906bf1268697b" name="a82da30a607ec0345769906bf1268697b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82da30a607ec0345769906bf1268697b">&#9670;&#160;</a></span>s21_calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21_calc </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>input_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculator function (full cycle) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_string</td><td>pointer to the input equation string </td></tr>
+    <tr><td class="paramname">x</td><td>- x value </td></tr>
+    <tr><td class="paramname">resultic</td><td>- equation result </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>error code 0 - invalid input, 1 - ok, 2 - infinity, 3 - error </dd></dl>
+
+</div>
+</div>
+<a id="a842e573b5940caf6081863326d3a0d11" name="a842e573b5940caf6081863326d3a0d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842e573b5940caf6081863326d3a0d11">&#9670;&#160;</a></span>string_to_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int string_to_num </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that transform number from string format to double. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>pointer to string number </td></tr>
+    <tr><td class="paramname">x</td><td>- pointer to double number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>counter - the number of characters read </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

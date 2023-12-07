@@ -1,0 +1,107 @@
+\doxysection{s21\+\_\+calc.\+h}
+\hypertarget{s21__calc_8h_source}{}\label{s21__calc_8h_source}\index{source/s21\_calc.h@{source/s21\_calc.h}}
+\mbox{\hyperlink{s21__calc_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SRC\_S21\_CALC\_H\_s}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SRC\_S21\_CALC\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Functions}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ ?\ -\/\ unary\ minus}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ i\ -\/\ sin}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ o\ -\/\ cos}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ t\ -\/\ tan}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ q\ -\/\ sqrt}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ n\ -\/\ ln}}
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ g\ -\/\ log}}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ d\ -\/\ asin}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ v\ -\/\ acos}}
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ y\ -\/\ atan}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ Priority}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ ()\ -\/\ 1}}
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ +-\/\ -\/\ 2}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ */\ -\/\ 3}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ \string^\ or\ functions\ -\/\ 4}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{union\ }\mbox{\hyperlink{unionvtype}{vtype}}\ \{}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{unionvtype_aa5d178874af9184d3235ef52b6b1c8f6}{op}};\ \ \ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{unionvtype_a1f260e6867bd2968fa262917576dd51f}{v}};\ \ }
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structst__ack}{st\_ack}}\ \{}
+\DoxyCodeLine{00037\ \ \ \textcolor{keyword}{union\ }\mbox{\hyperlink{unionvtype}{vtype}}\ \mbox{\hyperlink{structst__ack_ac2c16baf2a7e972113124602f6ec2199}{val}};\ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structst__ack}{st\_ack}}*\ \mbox{\hyperlink{structst__ack_a36ea71ab5c5ba9c4695b5263b4d4f813}{next}};\ \ }
+\DoxyCodeLine{00039\ \}\ \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{//\ MAIN}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a82da30a607ec0345769906bf1268697b}{s21\_calc}}(\textcolor{keywordtype}{char}*\ input\_string,\ \textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}*\ resultic);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{comment}{//\ CALCULATION}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_a3f666cda5a971cd907b4856c164913d6}{credit\_ann}}(\textcolor{keywordtype}{double}\ sum,\ \textcolor{keywordtype}{int}\ time,\ \textcolor{keywordtype}{double}\ percent,\ \textcolor{keywordtype}{double}*\ month\_pay,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}*\ overpay,\ \textcolor{keywordtype}{double}*\ common\_pay);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_a729ec76b11796254817e30a650c0b6e4}{credit\_diff}}(\textcolor{keywordtype}{double}\ sum,\ \textcolor{keywordtype}{int}\ time,\ \textcolor{keywordtype}{double}\ percent,\ \textcolor{keywordtype}{double}\ remainder,}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}*\ month\_pay,\ \textcolor{keywordtype}{double}*\ overpay,\ \textcolor{keywordtype}{int}\ cur\_m);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_afbc8b95650893c9b349e88dd8504be17}{calculation}}(\textcolor{keywordtype}{char}*\ input,\ \textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}*\ result);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{comment}{//\ SUPPORT\ FUNCTION}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_a1fdd3382b8ac0391dc5835ec07c04874}{oper}}(\textcolor{keywordtype}{char}\ ch,\ \mbox{\hyperlink{structst__ack}{stack}}**\ top,\ \textcolor{keywordtype}{int}*\ error);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00104\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_a9707ea0cb997e605a804e178bb72cd6d}{func}}(\textcolor{keywordtype}{char}\ ch,\ \mbox{\hyperlink{structst__ack}{stack}}**\ top,\ \textcolor{keywordtype}{int}*\ error);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a842e573b5940caf6081863326d3a0d11}{string\_to\_num}}(\textcolor{keywordtype}{char}*\ str,\ \textcolor{keywordtype}{double}*\ x);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{comment}{//\ REVERSE\ to\ POLISH\ NOTATION}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00121\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_a1d3b3b2b471daf5a05919e06ca692272}{rpn}}(\textcolor{keywordtype}{char}*\ input,\ \textcolor{keywordtype}{char}*\ output);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00128\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a0ab20fdd64b0ac84e7024ded81ee79ae}{prec}}(\textcolor{keywordtype}{char}\ x);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{comment}{//\ STACK}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00137\ \mbox{\hyperlink{structst__ack}{stack}}*\ \mbox{\hyperlink{s21__calc_8h_abc28752dce08d6587ae67ef7c277f685}{init}}(\textcolor{keyword}{union}\ \mbox{\hyperlink{unionvtype}{vtype}}\ value);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00144\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_a3a597e7dd1114d1393bc9775a6146f5e}{push}}(\textcolor{keyword}{union}\ \mbox{\hyperlink{unionvtype}{vtype}}\ value,\ \mbox{\hyperlink{structst__ack}{stack}}**\ top);}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00151\ \textcolor{keyword}{union\ }\mbox{\hyperlink{unionvtype}{vtype}}\ \mbox{\hyperlink{s21__calc_8h_a31bdb8994fbe2a1ec8ca97c577ede99c}{pop}}(\mbox{\hyperlink{structst__ack}{stack}}**\ top);}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00157\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_aa0b580f5d8455bd0d204858094f6663b}{destroy}}(\mbox{\hyperlink{structst__ack}{stack}}*\ top);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \textcolor{comment}{//\ CHECKING\ AND\ READING}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00167\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a78e553a93b4bdf0127ef5b5fbb7014cd}{check\_input}}(\textcolor{keywordtype}{char}*\ in\_equation,\ \textcolor{keywordtype}{char}*\ out\_equation);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{comment}{//\ SUPPORT\ PARCING\ FUNCTIONS}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00177\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_a72dac6df945cff73524bcf2c0466f60f}{number\_check}}(\textcolor{keywordtype}{char}*\ form,\ \textcolor{keywordtype}{int}*\ count,\ \textcolor{keywordtype}{char}*\ out\_equation);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00185\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a5a4d591365d55396cf3bf3be683b1803}{check\_trigon}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ form,\ \textcolor{keywordtype}{char}*\ result);}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00192\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_aae348f469432aeaf878f9aa48cd71ed8}{check\_minus}}(\textcolor{keywordtype}{char}*\ form,\ \textcolor{keywordtype}{char}*\ out\_equation);}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00199\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a12230b422064aad0c50f7ea5c14840d9}{afterminus}}(\textcolor{keywordtype}{char}*\ form);}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00208\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{s21__calc_8h_adaac1116c2b76c4c8ccf48e6c6df0f8c}{check\_bracket}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ form,\ \textcolor{keywordtype}{int}*\ scob,\ \textcolor{keywordtype}{char}*\ out\_equation);}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \textcolor{comment}{//\ CHECKING\ ROLE}}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00217\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a4c64f3c6fe42edf7f59e6572e18a1bbd}{isNumber}}(\textcolor{keywordtype}{char}\ x);}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00224\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a559f08973cb90110550e27c6b277cd26}{isFunc}}(\textcolor{keywordtype}{char}\ x);}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00231\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{s21__calc_8h_a887560f97d844f8413b8419ec57f8d3f}{isOper}}(\textcolor{keywordtype}{char}\ x);}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ SRC\_S21\_CALC\_H\_}}
+
+\end{DoxyCode}

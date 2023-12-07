@@ -1,0 +1,69 @@
+\doxysection{Файл source/checking\+\_\+role.c}
+\hypertarget{checking__role_8c}{}\label{checking__role_8c}\index{source/checking\_role.c@{source/checking\_role.c}}
+{\ttfamily \#include \"{}s21\+\_\+calc.\+h\"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{checking__role_8c_a559f08973cb90110550e27c6b277cd26}{is\+Func}} (char x)
+\begin{DoxyCompactList}\small\item\em Checking item is function or no. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{checking__role_8c_a887560f97d844f8413b8419ec57f8d3f}{is\+Oper}} (char x)
+\begin{DoxyCompactList}\small\item\em Checking item is operator or no. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{checking__role_8c_a4c64f3c6fe42edf7f59e6572e18a1bbd}{is\+Number}} (char x)
+\begin{DoxyCompactList}\small\item\em Checking item is number or no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\Hypertarget{checking__role_8c_a559f08973cb90110550e27c6b277cd26}\label{checking__role_8c_a559f08973cb90110550e27c6b277cd26} 
+\index{checking\_role.c@{checking\_role.c}!isFunc@{isFunc}}
+\index{isFunc@{isFunc}!checking\_role.c@{checking\_role.c}}
+\doxysubsubsection{\texorpdfstring{isFunc()}{isFunc()}}
+{\footnotesize\ttfamily int is\+Func (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+Checking item is function or no. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & checking item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 -\/ not a function, 1 -\/ function 
+\end{DoxyReturn}
+\Hypertarget{checking__role_8c_a4c64f3c6fe42edf7f59e6572e18a1bbd}\label{checking__role_8c_a4c64f3c6fe42edf7f59e6572e18a1bbd} 
+\index{checking\_role.c@{checking\_role.c}!isNumber@{isNumber}}
+\index{isNumber@{isNumber}!checking\_role.c@{checking\_role.c}}
+\doxysubsubsection{\texorpdfstring{isNumber()}{isNumber()}}
+{\footnotesize\ttfamily int is\+Number (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+Checking item is number or no. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & checking item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 -\/ not a number, 1 -\/ int number, 2 -\/ float number 
+\end{DoxyReturn}
+\Hypertarget{checking__role_8c_a887560f97d844f8413b8419ec57f8d3f}\label{checking__role_8c_a887560f97d844f8413b8419ec57f8d3f} 
+\index{checking\_role.c@{checking\_role.c}!isOper@{isOper}}
+\index{isOper@{isOper}!checking\_role.c@{checking\_role.c}}
+\doxysubsubsection{\texorpdfstring{isOper()}{isOper()}}
+{\footnotesize\ttfamily int is\+Oper (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+Checking item is operator or no. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & checking item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 -\/ not a operator, 1 -\/ operator 
+\end{DoxyReturn}

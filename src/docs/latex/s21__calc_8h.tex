@@ -1,0 +1,519 @@
+\doxysection{Файл source/s21\+\_\+calc.h}
+\hypertarget{s21__calc_8h}{}\label{s21__calc_8h}\index{source/s21\_calc.h@{source/s21\_calc.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{unionvtype}{vtype}}
+\begin{DoxyCompactList}\small\item\em union that content equation\textquotesingle{}s item \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structst__ack}{st\+\_\+ack}}
+\begin{DoxyCompactList}\small\item\em struct that content node of the list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{s21__calc_8h_a9ffefbbbb870ba29ca1f14c9bd8d8f21}{SRC\+\_\+\+S21\+\_\+\+CALC\+\_\+\+H\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structst__ack}{st\+\_\+ack}} \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}}
+\begin{DoxyCompactList}\small\item\em struct that content node of the list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{s21__calc_8h_a82da30a607ec0345769906bf1268697b}{s21\+\_\+calc}} (char \texorpdfstring{$\ast$}{*}input\+\_\+string, double x, double \texorpdfstring{$\ast$}{*}resultic)
+\begin{DoxyCompactList}\small\item\em Calculator function (full cycle) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_a3f666cda5a971cd907b4856c164913d6}{credit\+\_\+ann}} (double sum, int time, double percent, double \texorpdfstring{$\ast$}{*}month\+\_\+pay, double \texorpdfstring{$\ast$}{*}overpay, double \texorpdfstring{$\ast$}{*}common\+\_\+pay)
+\begin{DoxyCompactList}\small\item\em The function of calling the calculation of the credit (annuity) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_a729ec76b11796254817e30a650c0b6e4}{credit\+\_\+diff}} (double sum, int time, double percent, double remainder, double \texorpdfstring{$\ast$}{*}month\+\_\+pay, double \texorpdfstring{$\ast$}{*}overpay, int cur\+\_\+m)
+\begin{DoxyCompactList}\small\item\em The function of calling the calculation of the credit (differentional) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_afbc8b95650893c9b349e88dd8504be17}{calculation}} (char \texorpdfstring{$\ast$}{*}input, double x, double \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Only calculation function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_a1fdd3382b8ac0391dc5835ec07c04874}{oper}} (char ch, \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}top, int \texorpdfstring{$\ast$}{*}error)
+\begin{DoxyCompactList}\small\item\em Support function for calculation when encounter operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_a9707ea0cb997e605a804e178bb72cd6d}{func}} (char ch, \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}top, int \texorpdfstring{$\ast$}{*}error)
+\begin{DoxyCompactList}\small\item\em Support function for calculation when encounter function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_a842e573b5940caf6081863326d3a0d11}{string\+\_\+to\+\_\+num}} (char \texorpdfstring{$\ast$}{*}str, double \texorpdfstring{$\ast$}{*}x)
+\begin{DoxyCompactList}\small\item\em Function that transform number from string format to double. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_a1d3b3b2b471daf5a05919e06ca692272}{rpn}} (char \texorpdfstring{$\ast$}{*}input, char \texorpdfstring{$\ast$}{*}output)
+\begin{DoxyCompactList}\small\item\em Transform infix string to revers polish string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_a0ab20fdd64b0ac84e7024ded81ee79ae}{prec}} (char x)
+\begin{DoxyCompactList}\small\item\em Priority determinant. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{s21__calc_8h_abc28752dce08d6587ae67ef7c277f685}{init}} (union \mbox{\hyperlink{unionvtype}{vtype}} value)
+\begin{DoxyCompactList}\small\item\em Stack initialization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_a3a597e7dd1114d1393bc9775a6146f5e}{push}} (union \mbox{\hyperlink{unionvtype}{vtype}} value, \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}top)
+\begin{DoxyCompactList}\small\item\em Add node to stack. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{unionvtype}{vtype}} \mbox{\hyperlink{s21__calc_8h_a31bdb8994fbe2a1ec8ca97c577ede99c}{pop}} (\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}top)
+\begin{DoxyCompactList}\small\item\em Recieving value of node from stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_aa0b580f5d8455bd0d204858094f6663b}{destroy}} (\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}top)
+\begin{DoxyCompactList}\small\item\em Stack removing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_a78e553a93b4bdf0127ef5b5fbb7014cd}{check\+\_\+input}} (char \texorpdfstring{$\ast$}{*}in\+\_\+equation, char \texorpdfstring{$\ast$}{*}out\+\_\+equation)
+\begin{DoxyCompactList}\small\item\em Main parcing input eqaution string function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_a72dac6df945cff73524bcf2c0466f60f}{number\+\_\+check}} (char \texorpdfstring{$\ast$}{*}form, int \texorpdfstring{$\ast$}{*}count, char \texorpdfstring{$\ast$}{*}out\+\_\+equation)
+\begin{DoxyCompactList}\small\item\em Checking when encounter number in equation string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_a5a4d591365d55396cf3bf3be683b1803}{check\+\_\+trigon}} (const char \texorpdfstring{$\ast$}{*}form, char \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Checking when encounter function in equation string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_aae348f469432aeaf878f9aa48cd71ed8}{check\+\_\+minus}} (char \texorpdfstring{$\ast$}{*}form, char \texorpdfstring{$\ast$}{*}out\+\_\+equation)
+\begin{DoxyCompactList}\small\item\em Checking when encounter \"{}-\/\"{} in equation string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_a12230b422064aad0c50f7ea5c14840d9}{afterminus}} (char \texorpdfstring{$\ast$}{*}form)
+\begin{DoxyCompactList}\small\item\em Checking \"{}-\/\"{} sign is unary or operator? \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__calc_8h_adaac1116c2b76c4c8ccf48e6c6df0f8c}{check\+\_\+bracket}} (const char \texorpdfstring{$\ast$}{*}form, int \texorpdfstring{$\ast$}{*}scob, char \texorpdfstring{$\ast$}{*}out\+\_\+equation)
+\begin{DoxyCompactList}\small\item\em Checking when encounter \"{}(\"{} or \"{})\"{} in equation string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_a4c64f3c6fe42edf7f59e6572e18a1bbd}{is\+Number}} (char x)
+\begin{DoxyCompactList}\small\item\em Checking item is number or no. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_a559f08973cb90110550e27c6b277cd26}{is\+Func}} (char x)
+\begin{DoxyCompactList}\small\item\em Checking item is function or no. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__calc_8h_a887560f97d844f8413b8419ec57f8d3f}{is\+Oper}} (char x)
+\begin{DoxyCompactList}\small\item\em Checking item is operator or no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Макросы}
+\Hypertarget{s21__calc_8h_a9ffefbbbb870ba29ca1f14c9bd8d8f21}\label{s21__calc_8h_a9ffefbbbb870ba29ca1f14c9bd8d8f21} 
+\index{s21\_calc.h@{s21\_calc.h}!SRC\_S21\_CALC\_H\_@{SRC\_S21\_CALC\_H\_}}
+\index{SRC\_S21\_CALC\_H\_@{SRC\_S21\_CALC\_H\_}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{SRC\_S21\_CALC\_H\_}{SRC\_S21\_CALC\_H\_}}
+{\footnotesize\ttfamily \#define SRC\+\_\+\+S21\+\_\+\+CALC\+\_\+\+H\+\_\+}
+
+
+
+\doxysubsection{Типы}
+\Hypertarget{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}\label{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549} 
+\index{s21\_calc.h@{s21\_calc.h}!stack@{stack}}
+\index{stack@{stack}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{stack}{stack}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structst__ack}{st\+\_\+ack}} \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}}}
+
+
+
+struct that content node of the list 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{s21__calc_8h_a12230b422064aad0c50f7ea5c14840d9}\label{s21__calc_8h_a12230b422064aad0c50f7ea5c14840d9} 
+\index{s21\_calc.h@{s21\_calc.h}!afterminus@{afterminus}}
+\index{afterminus@{afterminus}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{afterminus()}{afterminus()}}
+{\footnotesize\ttfamily int afterminus (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{form }\end{DoxyParamCaption})}
+
+
+
+Checking \"{}-\/\"{} sign is unary or operator? 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 -\/ operator, 1 -\/ unary minus 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_afbc8b95650893c9b349e88dd8504be17}\label{s21__calc_8h_afbc8b95650893c9b349e88dd8504be17} 
+\index{s21\_calc.h@{s21\_calc.h}!calculation@{calculation}}
+\index{calculation@{calculation}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{calculation()}{calculation()}}
+{\footnotesize\ttfamily int calculation (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input,  }\item[{double}]{x,  }\item[{double \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Only calculation function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em input} & pointer to the input equation string \\
+\hline
+{\em x} & -\/ value х \\
+\hline
+{\em result} & -\/ calculation result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+code error 1 -\/ ok, 0 -\/ error, 2 -\/ inf 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_adaac1116c2b76c4c8ccf48e6c6df0f8c}\label{s21__calc_8h_adaac1116c2b76c4c8ccf48e6c6df0f8c} 
+\index{s21\_calc.h@{s21\_calc.h}!check\_bracket@{check\_bracket}}
+\index{check\_bracket@{check\_bracket}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{check\_bracket()}{check\_bracket()}}
+{\footnotesize\ttfamily void check\+\_\+bracket (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{form,  }\item[{int \texorpdfstring{$\ast$}{*}}]{scob,  }\item[{char \texorpdfstring{$\ast$}{*}}]{out\+\_\+equation }\end{DoxyParamCaption})}
+
+
+
+Checking when encounter \"{}(\"{} or \"{})\"{} in equation string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+{\em scob} & variable that show bracket is closed or no(even -\/ closed, odd -\/ opened) \\
+\hline
+{\em out\+\_\+equation} & pointer to parced string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_a78e553a93b4bdf0127ef5b5fbb7014cd}\label{s21__calc_8h_a78e553a93b4bdf0127ef5b5fbb7014cd} 
+\index{s21\_calc.h@{s21\_calc.h}!check\_input@{check\_input}}
+\index{check\_input@{check\_input}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{check\_input()}{check\_input()}}
+{\footnotesize\ttfamily int check\+\_\+input (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{in\+\_\+equation,  }\item[{char \texorpdfstring{$\ast$}{*}}]{out\+\_\+equation }\end{DoxyParamCaption})}
+
+
+
+Main parcing input eqaution string function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em in\+\_\+equation} & pointer to input eqaution string \\
+\hline
+{\em out\+\_\+equation} & pointer to parced eqaution string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+error code 1 -\/ ok, 0 -\/ invalid input 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_aae348f469432aeaf878f9aa48cd71ed8}\label{s21__calc_8h_aae348f469432aeaf878f9aa48cd71ed8} 
+\index{s21\_calc.h@{s21\_calc.h}!check\_minus@{check\_minus}}
+\index{check\_minus@{check\_minus}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{check\_minus()}{check\_minus()}}
+{\footnotesize\ttfamily void check\+\_\+minus (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{form,  }\item[{char \texorpdfstring{$\ast$}{*}}]{out\+\_\+equation }\end{DoxyParamCaption})}
+
+
+
+Checking when encounter \"{}-\/\"{} in equation string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+{\em out\+\_\+equation} & pointer to parced string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_a5a4d591365d55396cf3bf3be683b1803}\label{s21__calc_8h_a5a4d591365d55396cf3bf3be683b1803} 
+\index{s21\_calc.h@{s21\_calc.h}!check\_trigon@{check\_trigon}}
+\index{check\_trigon@{check\_trigon}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{check\_trigon()}{check\_trigon()}}
+{\footnotesize\ttfamily int check\+\_\+trigon (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{form,  }\item[{char \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Checking when encounter function in equation string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+{\em result} & pointer to parced string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+amount of checking items 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_a3f666cda5a971cd907b4856c164913d6}\label{s21__calc_8h_a3f666cda5a971cd907b4856c164913d6} 
+\index{s21\_calc.h@{s21\_calc.h}!credit\_ann@{credit\_ann}}
+\index{credit\_ann@{credit\_ann}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{credit\_ann()}{credit\_ann()}}
+{\footnotesize\ttfamily void credit\+\_\+ann (\begin{DoxyParamCaption}\item[{double}]{sum,  }\item[{int}]{time,  }\item[{double}]{percent,  }\item[{double \texorpdfstring{$\ast$}{*}}]{month\+\_\+pay,  }\item[{double \texorpdfstring{$\ast$}{*}}]{overpay,  }\item[{double \texorpdfstring{$\ast$}{*}}]{common\+\_\+pay }\end{DoxyParamCaption})}
+
+
+
+The function of calling the calculation of the credit (annuity) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sum} & -\/ credit sum \\
+\hline
+{\em time} & -\/ credit term \\
+\hline
+{\em percent} & -\/ annual interest rate \\
+\hline
+{\em month\+\_\+pay} & -\/ monthly pay \\
+\hline
+{\em overpay} & -\/ overpay sum \\
+\hline
+{\em common\+\_\+pay} & -\/ summury pay \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_a729ec76b11796254817e30a650c0b6e4}\label{s21__calc_8h_a729ec76b11796254817e30a650c0b6e4} 
+\index{s21\_calc.h@{s21\_calc.h}!credit\_diff@{credit\_diff}}
+\index{credit\_diff@{credit\_diff}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{credit\_diff()}{credit\_diff()}}
+{\footnotesize\ttfamily void credit\+\_\+diff (\begin{DoxyParamCaption}\item[{double}]{sum,  }\item[{int}]{time,  }\item[{double}]{percent,  }\item[{double}]{remainder,  }\item[{double \texorpdfstring{$\ast$}{*}}]{month\+\_\+pay,  }\item[{double \texorpdfstring{$\ast$}{*}}]{overpay,  }\item[{int}]{cur\+\_\+m }\end{DoxyParamCaption})}
+
+
+
+The function of calling the calculation of the credit (differentional) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sum} & -\/ credit sum \\
+\hline
+{\em time} & -\/ credit term \\
+\hline
+{\em percent} & -\/ annual interest rate \\
+\hline
+{\em remainder} & -\/ credit sum remainder \\
+\hline
+{\em month\+\_\+pay} & -\/ monthly pay \\
+\hline
+{\em overpay} & -\/ overpay sum \\
+\hline
+{\em cur\+\_\+m} & -\/ current month \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_aa0b580f5d8455bd0d204858094f6663b}\label{s21__calc_8h_aa0b580f5d8455bd0d204858094f6663b} 
+\index{s21\_calc.h@{s21\_calc.h}!destroy@{destroy}}
+\index{destroy@{destroy}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}}]{top }\end{DoxyParamCaption})}
+
+
+
+Stack removing. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em указатель} & pointer to removing stack \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_a9707ea0cb997e605a804e178bb72cd6d}\label{s21__calc_8h_a9707ea0cb997e605a804e178bb72cd6d} 
+\index{s21\_calc.h@{s21\_calc.h}!func@{func}}
+\index{func@{func}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily void func (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{top,  }\item[{int \texorpdfstring{$\ast$}{*}}]{error }\end{DoxyParamCaption})}
+
+
+
+Support function for calculation when encounter function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em сh} & func id \\
+\hline
+{\em top} & -\/ pointer to stack \\
+\hline
+{\em error} & -\/ error variable \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_abc28752dce08d6587ae67ef7c277f685}\label{s21__calc_8h_abc28752dce08d6587ae67ef7c277f685} 
+\index{s21\_calc.h@{s21\_calc.h}!init@{init}}
+\index{init@{init}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*} init (\begin{DoxyParamCaption}\item[{union \mbox{\hyperlink{unionvtype}{vtype}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Stack initialization. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+pointer to created stack 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_a559f08973cb90110550e27c6b277cd26}\label{s21__calc_8h_a559f08973cb90110550e27c6b277cd26} 
+\index{s21\_calc.h@{s21\_calc.h}!isFunc@{isFunc}}
+\index{isFunc@{isFunc}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{isFunc()}{isFunc()}}
+{\footnotesize\ttfamily int is\+Func (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+Checking item is function or no. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & checking item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 -\/ not a function, 1 -\/ function 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_a4c64f3c6fe42edf7f59e6572e18a1bbd}\label{s21__calc_8h_a4c64f3c6fe42edf7f59e6572e18a1bbd} 
+\index{s21\_calc.h@{s21\_calc.h}!isNumber@{isNumber}}
+\index{isNumber@{isNumber}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{isNumber()}{isNumber()}}
+{\footnotesize\ttfamily int is\+Number (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+Checking item is number or no. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & checking item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 -\/ not a number, 1 -\/ int number, 2 -\/ float number 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_a887560f97d844f8413b8419ec57f8d3f}\label{s21__calc_8h_a887560f97d844f8413b8419ec57f8d3f} 
+\index{s21\_calc.h@{s21\_calc.h}!isOper@{isOper}}
+\index{isOper@{isOper}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{isOper()}{isOper()}}
+{\footnotesize\ttfamily int is\+Oper (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+Checking item is operator or no. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & checking item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 -\/ not a operator, 1 -\/ operator 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_a72dac6df945cff73524bcf2c0466f60f}\label{s21__calc_8h_a72dac6df945cff73524bcf2c0466f60f} 
+\index{s21\_calc.h@{s21\_calc.h}!number\_check@{number\_check}}
+\index{number\_check@{number\_check}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{number\_check()}{number\_check()}}
+{\footnotesize\ttfamily void number\+\_\+check (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{form,  }\item[{int \texorpdfstring{$\ast$}{*}}]{count,  }\item[{char \texorpdfstring{$\ast$}{*}}]{out\+\_\+equation }\end{DoxyParamCaption})}
+
+
+
+Checking when encounter number in equation string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em form} & pointer to parcing string \\
+\hline
+{\em count} & variable that content amount of checking items \\
+\hline
+{\em out\+\_\+equation} & pointer to parced string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_a1fdd3382b8ac0391dc5835ec07c04874}\label{s21__calc_8h_a1fdd3382b8ac0391dc5835ec07c04874} 
+\index{s21\_calc.h@{s21\_calc.h}!oper@{oper}}
+\index{oper@{oper}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{oper()}{oper()}}
+{\footnotesize\ttfamily void oper (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{top,  }\item[{int \texorpdfstring{$\ast$}{*}}]{error }\end{DoxyParamCaption})}
+
+
+
+Support function for calculation when encounter operator. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ср} & opearator id \\
+\hline
+{\em top} & -\/ pointer to stack \\
+\hline
+{\em error} & -\/ error variable \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_a31bdb8994fbe2a1ec8ca97c577ede99c}\label{s21__calc_8h_a31bdb8994fbe2a1ec8ca97c577ede99c} 
+\index{s21\_calc.h@{s21\_calc.h}!pop@{pop}}
+\index{pop@{pop}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily union \mbox{\hyperlink{unionvtype}{vtype}} pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{top }\end{DoxyParamCaption})}
+
+
+
+Recieving value of node from stack. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em указатель} & pointer to stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+value of node\textquotesingle{}s 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_a0ab20fdd64b0ac84e7024ded81ee79ae}\label{s21__calc_8h_a0ab20fdd64b0ac84e7024ded81ee79ae} 
+\index{s21\_calc.h@{s21\_calc.h}!prec@{prec}}
+\index{prec@{prec}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{prec()}{prec()}}
+{\footnotesize\ttfamily int prec (\begin{DoxyParamCaption}\item[{char}]{x }\end{DoxyParamCaption})}
+
+
+
+Priority determinant. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & checking item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+priority 1\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}2\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}3\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}4 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_a3a597e7dd1114d1393bc9775a6146f5e}\label{s21__calc_8h_a3a597e7dd1114d1393bc9775a6146f5e} 
+\index{s21\_calc.h@{s21\_calc.h}!push@{push}}
+\index{push@{push}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{union \mbox{\hyperlink{unionvtype}{vtype}}}]{value,  }\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{top }\end{DoxyParamCaption})}
+
+
+
+Add node to stack. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & value \\
+\hline
+{\em указатель} & pointer to stack \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_a1d3b3b2b471daf5a05919e06ca692272}\label{s21__calc_8h_a1d3b3b2b471daf5a05919e06ca692272} 
+\index{s21\_calc.h@{s21\_calc.h}!rpn@{rpn}}
+\index{rpn@{rpn}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{rpn()}{rpn()}}
+{\footnotesize\ttfamily void rpn (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input,  }\item[{char \texorpdfstring{$\ast$}{*}}]{output }\end{DoxyParamCaption})}
+
+
+
+Transform infix string to revers polish string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em in\+\_\+equation} & pointer to infix string \\
+\hline
+{\em out\+\_\+equation} & pointer to reverse polish string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__calc_8h_a82da30a607ec0345769906bf1268697b}\label{s21__calc_8h_a82da30a607ec0345769906bf1268697b} 
+\index{s21\_calc.h@{s21\_calc.h}!s21\_calc@{s21\_calc}}
+\index{s21\_calc@{s21\_calc}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{s21\_calc()}{s21\_calc()}}
+{\footnotesize\ttfamily int s21\+\_\+calc (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input\+\_\+string,  }\item[{double}]{x,  }\item[{double \texorpdfstring{$\ast$}{*}}]{resultic }\end{DoxyParamCaption})}
+
+
+
+Calculator function (full cycle) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em input\+\_\+string} & pointer to the input equation string \\
+\hline
+{\em x} & -\/ x value \\
+\hline
+{\em resultic} & -\/ equation result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+error code 0 -\/ invalid input, 1 -\/ ok, 2 -\/ infinity, 3 -\/ error 
+\end{DoxyReturn}
+\Hypertarget{s21__calc_8h_a842e573b5940caf6081863326d3a0d11}\label{s21__calc_8h_a842e573b5940caf6081863326d3a0d11} 
+\index{s21\_calc.h@{s21\_calc.h}!string\_to\_num@{string\_to\_num}}
+\index{string\_to\_num@{string\_to\_num}!s21\_calc.h@{s21\_calc.h}}
+\doxysubsubsection{\texorpdfstring{string\_to\_num()}{string\_to\_num()}}
+{\footnotesize\ttfamily int string\+\_\+to\+\_\+num (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{double \texorpdfstring{$\ast$}{*}}]{x }\end{DoxyParamCaption})}
+
+
+
+Function that transform number from string format to double. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & pointer to string number \\
+\hline
+{\em x} & -\/ pointer to double number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+counter -\/ the number of characters read 
+\end{DoxyReturn}

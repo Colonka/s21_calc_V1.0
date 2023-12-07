@@ -1,0 +1,85 @@
+\doxysection{Файл source/stack.c}
+\hypertarget{stack_8c}{}\label{stack_8c}\index{source/stack.c@{source/stack.c}}
+{\ttfamily \#include \"{}s21\+\_\+calc.\+h\"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{stack_8c_abc28752dce08d6587ae67ef7c277f685}{init}} (union \mbox{\hyperlink{unionvtype}{vtype}} value)
+\begin{DoxyCompactList}\small\item\em Stack initialization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8c_a3a597e7dd1114d1393bc9775a6146f5e}{push}} (union \mbox{\hyperlink{unionvtype}{vtype}} value, \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}top)
+\begin{DoxyCompactList}\small\item\em Add node to stack. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{unionvtype}{vtype}} \mbox{\hyperlink{stack_8c_a31bdb8994fbe2a1ec8ca97c577ede99c}{pop}} (\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}top)
+\begin{DoxyCompactList}\small\item\em Recieving value of node from stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_8c_aa0b580f5d8455bd0d204858094f6663b}{destroy}} (\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}top)
+\begin{DoxyCompactList}\small\item\em Stack removing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\Hypertarget{stack_8c_aa0b580f5d8455bd0d204858094f6663b}\label{stack_8c_aa0b580f5d8455bd0d204858094f6663b} 
+\index{stack.c@{stack.c}!destroy@{destroy}}
+\index{destroy@{destroy}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}}]{top }\end{DoxyParamCaption})}
+
+
+
+Stack removing. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em указатель} & pointer to removing stack \\
+\hline
+\end{DoxyParams}
+\Hypertarget{stack_8c_abc28752dce08d6587ae67ef7c277f685}\label{stack_8c_abc28752dce08d6587ae67ef7c277f685} 
+\index{stack.c@{stack.c}!init@{init}}
+\index{init@{init}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*} init (\begin{DoxyParamCaption}\item[{union \mbox{\hyperlink{unionvtype}{vtype}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Stack initialization. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+pointer to created stack 
+\end{DoxyReturn}
+\Hypertarget{stack_8c_a31bdb8994fbe2a1ec8ca97c577ede99c}\label{stack_8c_a31bdb8994fbe2a1ec8ca97c577ede99c} 
+\index{stack.c@{stack.c}!pop@{pop}}
+\index{pop@{pop}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily union \mbox{\hyperlink{unionvtype}{vtype}} pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{top }\end{DoxyParamCaption})}
+
+
+
+Recieving value of node from stack. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em указатель} & pointer to stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+value of node\textquotesingle{}s 
+\end{DoxyReturn}
+\Hypertarget{stack_8c_a3a597e7dd1114d1393bc9775a6146f5e}\label{stack_8c_a3a597e7dd1114d1393bc9775a6146f5e} 
+\index{stack.c@{stack.c}!push@{push}}
+\index{push@{push}!stack.c@{stack.c}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{union \mbox{\hyperlink{unionvtype}{vtype}}}]{value,  }\item[{\mbox{\hyperlink{s21__calc_8h_a148bc9265c8fcd49d620ad2ce7546549}{stack}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{top }\end{DoxyParamCaption})}
+
+
+
+Add node to stack. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & value \\
+\hline
+{\em указатель} & pointer to stack \\
+\hline
+\end{DoxyParams}

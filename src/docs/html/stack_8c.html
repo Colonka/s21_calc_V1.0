@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21_calc: Файл source/stack.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">s21_calc<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implenetation of me own vercion of calculator with graph creator and credit calculator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл stack.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="s21__calc_8h_source.html">s21_calc.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:abc28752dce08d6587ae67ef7c277f685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8c.html#abc28752dce08d6587ae67ef7c277f685">init</a> (union <a class="el" href="unionvtype.html">vtype</a> value)</td></tr>
+<tr class="memdesc:abc28752dce08d6587ae67ef7c277f685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack initialization.  <br /></td></tr>
+<tr class="separator:abc28752dce08d6587ae67ef7c277f685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a597e7dd1114d1393bc9775a6146f5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8c.html#a3a597e7dd1114d1393bc9775a6146f5e">push</a> (union <a class="el" href="unionvtype.html">vtype</a> value, <a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **top)</td></tr>
+<tr class="memdesc:a3a597e7dd1114d1393bc9775a6146f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add node to stack.  <br /></td></tr>
+<tr class="separator:a3a597e7dd1114d1393bc9775a6146f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31bdb8994fbe2a1ec8ca97c577ede99c"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionvtype.html">vtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8c.html#a31bdb8994fbe2a1ec8ca97c577ede99c">pop</a> (<a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **top)</td></tr>
+<tr class="memdesc:a31bdb8994fbe2a1ec8ca97c577ede99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recieving value of node from stack.  <br /></td></tr>
+<tr class="separator:a31bdb8994fbe2a1ec8ca97c577ede99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b580f5d8455bd0d204858094f6663b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8c.html#aa0b580f5d8455bd0d204858094f6663b">destroy</a> (<a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> *top)</td></tr>
+<tr class="memdesc:aa0b580f5d8455bd0d204858094f6663b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack removing.  <br /></td></tr>
+<tr class="separator:aa0b580f5d8455bd0d204858094f6663b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="aa0b580f5d8455bd0d204858094f6663b" name="aa0b580f5d8455bd0d204858094f6663b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0b580f5d8455bd0d204858094f6663b">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> *&#160;</td>
+          <td class="paramname"><em>top</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stack removing. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">указатель</td><td>pointer to removing stack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc28752dce08d6587ae67ef7c277f685" name="abc28752dce08d6587ae67ef7c277f685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc28752dce08d6587ae67ef7c277f685">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> * init </td>
+          <td>(</td>
+          <td class="paramtype">union <a class="el" href="unionvtype.html">vtype</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stack initialization. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>pointer to created stack </dd></dl>
+
+</div>
+</div>
+<a id="a31bdb8994fbe2a1ec8ca97c577ede99c" name="a31bdb8994fbe2a1ec8ca97c577ede99c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31bdb8994fbe2a1ec8ca97c577ede99c">&#9670;&#160;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union <a class="el" href="unionvtype.html">vtype</a> pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **&#160;</td>
+          <td class="paramname"><em>top</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recieving value of node from stack. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">указатель</td><td>pointer to stack </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>value of node's </dd></dl>
+
+</div>
+</div>
+<a id="a3a597e7dd1114d1393bc9775a6146f5e" name="a3a597e7dd1114d1393bc9775a6146f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a597e7dd1114d1393bc9775a6146f5e">&#9670;&#160;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push </td>
+          <td>(</td>
+          <td class="paramtype">union <a class="el" href="unionvtype.html">vtype</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__calc_8h.html#a148bc9265c8fcd49d620ad2ce7546549">stack</a> **&#160;</td>
+          <td class="paramname"><em>top</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add node to stack. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>value </td></tr>
+    <tr><td class="paramname">указатель</td><td>pointer to stack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
